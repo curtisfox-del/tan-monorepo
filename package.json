@@ -1,0 +1,11 @@
+{
+  "name": "tan-monorepo",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "build": "npm run -w apps/web build",
+    "dev": "npm run -w apps/web dev",
+    "seed": "npm run -w apps/web seed",
+    "prisma:push": "npm run -w apps/web prisma:push"
+  }
+}
